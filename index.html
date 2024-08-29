@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Design App</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <button id="zoomIn">Zoom In</button>
+      <button id="zoomOut">Zoom Out</button>
+      <button id="addLayer">Add Layer</button>
+      <button id="removeLayer">Remove Layer</button>
+      <button id="drawRect">Draw Rectangle</button>
+    </div>
+    <div class="sidebar">
+      <h3>Tools</h3>
+      <ul id="toolsList">
+        <li id="selectTool">Select</li>
+        <li id="drawTool">Draw</li>
+        <li id="eraseTool">Erase</li>
+        <li id="textTool">Text</li>
+      </ul>
+      <h3>Colors</h3>
+      <input style="margin-top: -7px;" type="color" id="colorPicker" value="#3498db" />
+      <h3 style="margin-top: 25px;">Layers</h3>
+      <ul id="layerList"></ul>
+    </div>
+    <div class="canvas-container">
+      <div id="canvas"></div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
